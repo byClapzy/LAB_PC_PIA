@@ -5,7 +5,7 @@ Este repositorio contiene los scripts desarrollados por [Edgar Fernando Gonzalez
 
 ## Secciones
 
-- [Scripting en PowerShell](#scripting-en-powershell)
+- [ScriptingPowerShell](#scripting-en-powershell)
 - [Scripting en Bash](#scripting-en-bash)
 - [Webscraping](#webscraping)
 - [Escáner de Puertos](#escáner-de-puertos)

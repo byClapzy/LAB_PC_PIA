@@ -14,3 +14,4 @@ aqui van los scripts
 5. [portscanv1.sh](portscanv1.sh): Escaneo de puertos.
 6. [superscan.sh](superscan.sh): Escaner completo.
 7. [welcome.sh](welcome.sh): Da la bienvenida y muestra procesos.
+8. [automap.sh](automap.sh): usando nmap.

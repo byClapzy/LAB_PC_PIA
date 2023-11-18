@@ -1,0 +1,73 @@
+#!/bin/bash
+#Edgar Fernando Gonzalez Pardavé 
+#2030467
+escaneo_red(){
+	echo "Introduce la subred  a escanear "
+	echo "como: 127.0.0.0/24, esta informacion la encuentras en ip addr show"
+	read -p "introduce la opcion: " subred 
+	
+	echo "Escaneando la subred $subred....." 
+	nmap  -sn "$subred" -oN  escaneo_red.txt
+	echo  "Escaneo listo, resultados  en el archivo escaneo_red.txt" 
+}
+
+
+escaneo_individual() {
+	echo "introduce la ip a escenar "
+	echo "Ejemplo: 128.0.0.1"
+	read -p "Introduce la ip:" ip
+	echo "Escanendo la ip $ip.."
+	nmap -v -A "$ip" -oN ecaneo_individual.txt
+	echo "----Escano completado----"
+}
+
+scaneo_udp() {
+	echo "Introduce la ip a scanear"
+	read -p "INtroduce la ip:" ip
+	echo "Escanenado la ---$ip---"
+	sudo nmap -sU "$ip" -oN escaneo_udp.txt
+}
+
+escaneo_script() {
+	echo "Se tendra que introducir dos cosas: la ip y  el script"
+	read -p "Introduce el scritp:" script
+	read -p "Introduce la ip:" ip
+	echo "Escanenado ----o_o---"
+	nmap  --script "$script" "$ip" -oN escaneo_script.txt
+}
+
+# Menú principal
+while true; do
+    echo "Selecciona una opción:"
+    echo "1. Escaneo de  red"
+    echo "2. Escaneo individual"
+    echo "3. Scaneo UDP"
+    echo "4. Escaeo con script"
+    echo "5. Salir"
+    read opcion
+
+    case $opcion in
+        1)
+            escaneo_red
+            ;;
+        2)
+            escaneo_individual
+            ;;
+	3)
+            scaneo_udp
+            ;;
+	4)
+            escaneo_script
+            ;;
+
+	 5)
+            echo "Saliendo del programa."
+            exit 0
+            ;;
+
+
+        *)
+            echo "Opción no válida. Por favor, selecciona una opción válida."
+            ;;
+    esac
+done

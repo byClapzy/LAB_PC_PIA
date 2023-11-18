@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Sun Oct  8 14:45:30 2023 as: nmap -sU -oN escaneo_udp.txt 192.168.117.1
+Nmap scan report for 192.168.117.1
+Host is up (0.00041s latency).
+Not shown: 999 open|filtered ports
+PORT    STATE SERVICE
+137/udp open  netbios-ns
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+# Nmap done at Sun Oct  8 14:45:38 2023 -- 1 IP address (1 host up) scanned in 8.27 seconds

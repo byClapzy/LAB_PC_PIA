@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Sun Oct  8 14:35:03 2023 as: nmap --script ssl-poodle -oN escaneo_script.txt 192.168.117.1
+Nmap scan report for 192.168.117.1
+Host is up (0.0032s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+443/tcp  open  https
+903/tcp  open  iss-console-mgr
+5357/tcp open  wsdapi
+
+# Nmap done at Sun Oct  8 14:35:07 2023 -- 1 IP address (1 host up) scanned in 4.40 seconds

@@ -7,5 +7,5 @@ El objetivo de esta sección es enviar un correo con smtp
 
 ## Contenido
 
-1. [Script1.ps1](Script1.ps1): Descripción breve.
-2. [Script2.ps1](Script2.ps1): Descripción breve.
+1. [practica12.py](practica12.py): Envio de correo.
+2. [miemail.html](miemail.html): html para darle forma al correo.

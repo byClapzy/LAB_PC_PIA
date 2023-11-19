@@ -12,3 +12,5 @@ En esta parte se encuentra los script de PowerShell  que se realizaron a lo larg
 2. [codipo.ps1](codipo.ps1): Se decodifica un archivo.
 3. [command_posh.ps1](command_posh.ps1): decodifica una comando.
 4. [decoder_posh.ps1](decoder_posh.ps1): Decodifica.
+5. [scriptiy.ps1](scriptiy.ps1): script sencillo para automatizar una tarea.
+6. [send_syinfo.ps1](send_syinfo.ps1):

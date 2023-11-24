@@ -8,8 +8,8 @@ from email.mime.text import MIMEText
 
 # Preparamos los datos necesarios para el correo
 
-remitente = 'soloparayt184@gmail.com' #Aqui va tu correo
-destinatario= 'edgar.gonzalezprd@uanl.edu.mx' # Aqui va pues el destinatario
+remitente = '' #Aqui va tu correo
+destinatario= '' # Aqui va pues el destinatario
 asunto = 'PRACTICA 12' # El asunto del correo
 
 # Se le da escructura al mensaje
@@ -31,7 +31,7 @@ server =smtplib.SMTP('smtp.gmail.com', 587)
 #nuestro correo
 
 server.starttls()
-server.login('soloparayt184@gmail.com', 'asrc irdo emxt uczn') # es tu correo y contraseña de app
+server.login('', '') # es tu correo y contraseña de app
 
 #Se envia el correo
 server.sendmail(remitente,destinatario,msg.as_string())
